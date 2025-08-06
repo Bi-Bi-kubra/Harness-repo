@@ -1,7 +1,6 @@
 provider "azurerm" {
   features {}
-  tenant_id       = "687f51c3-0c5d-4905-84f8-97c683a5b9d1"
-  subscription_id = "68fd05bd-8d0d-46ea-b8d2-f3ea2513d9fe"
+
 }
 
 # Use data source instead of creating resource group
@@ -38,6 +37,7 @@ resource "azurerm_linux_web_app" "linux_web_app" {
     always_on = false # Must be false for F1
   }
 }
+
 
 
 
